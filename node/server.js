@@ -3,6 +3,7 @@ var http = require("http");
 var os = require("os");
 var ip = require("ip");
 
+
 var server = http.createServer(function(req, res) {
     if (req.url === "/" ) {
         fs.readFile("./public/index.html", "UTF-8", function(err, body){
